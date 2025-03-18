@@ -11,7 +11,7 @@ import SwiftUI
 struct FamousQuotesParseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: FamousQuotesViewModel())
         }
     }
 }
