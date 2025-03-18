@@ -17,6 +17,9 @@ struct ContentView: View {
                     Text(quote.content)
                 }
             }
+            .onAppear {
+                vm.restoreQuotes()
+            }
             .sheet(isPresented: $vm.isShowingAddQuote) {
                 Form {
                     TextField("Author", text: $vm.newQuoteAuthor)
@@ -38,5 +41,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(vm: FamousQuotesViewModel(quotes: [Quote(author: "Me", content: "Duh")]))
+    ContentView(vm: FamousQuotesViewModel())
 }

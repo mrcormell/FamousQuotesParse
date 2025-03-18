@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ParseSwift
 
 @main
 struct FamousQuotesParseApp: App {
@@ -13,5 +14,14 @@ struct FamousQuotesParseApp: App {
         WindowGroup {
             ContentView(vm: FamousQuotesViewModel())
         }
+    }
+    
+    init() {
+        // Replace placeholders with your Back4App credentials
+        ParseSwift.initialize(
+            applicationId: "AbzPsnTBMF8htZau8a9Tynv6GSiQMCLzGHFKwzRB",
+            clientKey: "aJVsCJjURgX1yihCubYxmmUUT4YJbNQWgpUX0f9H",
+            serverURL: URL(string: "https://parseapi.back4app.com")!
+        )
     }
 }

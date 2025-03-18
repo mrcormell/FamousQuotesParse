@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ParseSwift
 
 @Observable
 class FamousQuotesViewModel {
@@ -14,15 +15,23 @@ class FamousQuotesViewModel {
     var newQuoteAuthor: String
     var newQuoteContent: String
     
-    init(quotes: [Quote] = []) {
-        self.quotes = quotes
+    init() {
+        self.quotes = []
         self.isShowingAddQuote = false
         self.newQuoteAuthor = ""
         self.newQuoteContent = ""
     }
     
+    func restoreQuotes() {
+        QuoteRepository.shared.getAllQuotes(completion: { quotes in
+            self.quotes = quotes
+        })
+    }
+    
     func addNewQuote() {
-        quotes.append(Quote(author: newQuoteAuthor, content: newQuoteContent))
+        let quote = Quote(author: newQuoteAuthor, content: newQuoteContent)
+        quotes.append(quote)
+        QuoteRepository.shared.saveQuote(quote: quote)
         newQuoteAuthor = ""
         newQuoteContent = ""
         isShowingAddQuote = false
