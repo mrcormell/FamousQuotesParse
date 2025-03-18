@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B48F404E2D89D4DA0063D229 /* FamousQuotesParse */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FamousQuotesParse;
-			sourceTree = "<group>";
-		};
 		B48F405F2D89D4DC0063D229 /* FamousQuotesParseTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FamousQuotesParseTests;
@@ -43,6 +38,11 @@
 		B48F40692D89D4DC0063D229 /* FamousQuotesParseUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FamousQuotesParseUITests;
+			sourceTree = "<group>";
+		};
+		B48F40982D89D6930063D229 /* FamousQuotesParse */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FamousQuotesParse;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		B48F40432D89D4D90063D229 = {
 			isa = PBXGroup;
 			children = (
-				B48F404E2D89D4DA0063D229 /* FamousQuotesParse */,
+				B48F40982D89D6930063D229 /* FamousQuotesParse */,
 				B48F405F2D89D4DC0063D229 /* FamousQuotesParseTests */,
 				B48F40692D89D4DC0063D229 /* FamousQuotesParseUITests */,
 				B48F404D2D89D4DA0063D229 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B48F404E2D89D4DA0063D229 /* FamousQuotesParse */,
+				B48F40982D89D6930063D229 /* FamousQuotesParse */,
 			);
 			name = FamousQuotesParse;
 			packageProductDependencies = (
