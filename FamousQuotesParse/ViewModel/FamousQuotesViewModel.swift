@@ -28,6 +28,13 @@ class FamousQuotesViewModel {
         })
     }
     
+    func delete(at offsets: IndexSet) {
+        for index in offsets {
+            QuoteRepository.shared.delete(quote: quotes[index])
+        }
+        quotes.remove(atOffsets: offsets)
+    }
+    
     func addNewQuote() {
         let quote = Quote(author: newQuoteAuthor, content: newQuoteContent)
         quotes.append(quote)

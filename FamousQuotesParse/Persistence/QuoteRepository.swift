@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ParseSwift
 
 class QuoteRepository {
     static let shared = QuoteRepository()
@@ -31,6 +32,16 @@ class QuoteRepository {
             
             completion(quotes)
             
+        }
+    }
+    
+    func delete(quote: Quote) {
+        let query = QuoteDao.query("author" == quote.author, "content" == quote.content)
+        query.find() { response in
+            let daos = try? response.get()
+            daos?.forEach({
+                try? $0.delete()
+            })
         }
     }
 }

@@ -16,6 +16,7 @@ struct ContentView: View {
                 ForEach(vm.quotes) { quote in
                     Text(quote.content)
                 }
+                .onDelete(perform: vm.delete)
             }
             .onAppear {
                 vm.restoreQuotes()
@@ -38,6 +39,8 @@ struct ContentView: View {
             }
         }
     }
+    
+
 }
 
 #Preview {
