@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B48F40AC2D8A15C50063D229 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B48F40AB2D8A15C50063D229 /* ParseSwift */; };
+		B48F40F12D8ADF350063D229 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B48F40F02D8ADF350063D229 /* ParseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48F40AC2D8A15C50063D229 /* ParseSwift in Frameworks */,
+				B48F40F12D8ADF350063D229 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = FamousQuotesParse;
 			packageProductDependencies = (
-				B48F40AB2D8A15C50063D229 /* ParseSwift */,
+				B48F40F02D8ADF350063D229 /* ParseSwift */,
 			);
 			productName = FamousQuotesParse;
 			productReference = B48F404C2D89D4DA0063D229 /* FamousQuotesParse.app */;
@@ -202,7 +202,7 @@
 			mainGroup = B48F40432D89D4D90063D229;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B48F40AA2D8A15C50063D229 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				B48F40EF2D8ADF350063D229 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B48F404D2D89D4DA0063D229 /* Products */;
@@ -563,7 +563,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B48F40AA2D8A15C50063D229 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+		B48F40EF2D8ADF350063D229 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/parse-community/Parse-Swift";
 			requirement = {
@@ -574,9 +574,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B48F40AB2D8A15C50063D229 /* ParseSwift */ = {
+		B48F40F02D8ADF350063D229 /* ParseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B48F40AA2D8A15C50063D229 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			package = B48F40EF2D8ADF350063D229 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
