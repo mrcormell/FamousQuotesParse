@@ -19,8 +19,8 @@ struct FamousQuotesParseApp: App {
     init() {
         // Replace placeholders with your Back4App credentials
         ParseSwift.initialize(
-            applicationId: "YtuhdstQukbbLW9dAsdnyyS0inoGNxqm7IMjhelp",
-            clientKey: "GRsZwyrMzgkC09ToQP86QaeiDrsK3rJWP6Frn6jD",
+            applicationId: "APPLICATION ID",
+            clientKey: "CLIENT KEY",
             serverURL: URL(string: "https://parseapi.back4app.com")!
         )
     }
